@@ -27,12 +27,10 @@ cors_proxy
     originBlacklist: originBlacklist,
     originWhitelist: originWhitelist,
     // requireHeader: ['origin', 'x-requested-with'],
-    setHeaders: {
-      Referer: "https://acailly-cors-anywhere.herokuapp.com/",
-      Origin: "https://acailly-cors-anywhere.herokuapp.com/",
-    },
     checkRateLimit: checkRateLimit,
     removeHeaders: [
+      "referer",
+      "origin",
       "cookie",
       "cookie2",
       // Strip Heroku-specific headers
